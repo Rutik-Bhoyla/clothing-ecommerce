@@ -23,7 +23,7 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <Routes>
-          <Route path="/clothing-ecommerce" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductListPage />} />
           <Route path="/product/:id" element={<ProductDetailPage />} />
           <Route path="/cart" element={<CartPage />} />
