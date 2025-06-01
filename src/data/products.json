@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "name": "Classic White Shirt",
+    "category": "Men",
+    "sizes": ["S", "M", "L"],
+    "price": 59,
+    "description": "A timeless white shirt crafted with premium cotton for comfort and style.",
+    "image": "/Images/WhiteShirt.webp",
+    "tags": ["summer", "spring"]
+  },
+  {
+    "id": "2",
+    "name": "Relaxed Fit Trousers",
+    "category": "Men",
+    "sizes": ["M", "L"],
+    "price": 89,
+    "description": "Relaxed fit trousers made for everyday comfort and effortless style.",
+    "image": "/Images/FitTrouser.webp",
+    "tags": ["autumn", "winter"]
+  },
+  {
+    "id": "3",
+    "name": "Lightweight Jacket",
+    "category": "Men",
+    "sizes": ["L", "XL"],
+    "price": 120,
+    "description": "A lightweight jacket perfect for layering, combining function and fashion.",
+    "image": "/Images/LightJacket.webp",
+    "tags": ["autumn", "spring"]
+  },
+  {
+    "id": "4",
+    "name": "Casual T-Shirt",
+    "category": "Shirts",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 35,
+    "description": "Soft and breathable casual T-shirt for everyday wear.",
+    "image": "/Images/casualTshirt.webp",
+    "tags": ["summer"]
+  },
+  {
+    "id": "5",
+    "name": "Minimal Coat",
+    "category": "Women",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 85,
+    "description": "Soft and breathable casual Coat for everyday wear.",
+    "image": "/Images/minimal coat.webp",
+    "tags": ["winter"]
+  },
+  {
+    "id": "6",
+    "name": "Linen Shirt",
+    "category": "Men",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 80,
+    "description": "Linen shirt for everyday wear.",
+    "image": "/Images/Linen shirt.webp",
+    "tags": ["summer"]
+  },
+  {
+    "id": "7",
+    "name": "Tapered Pant",
+    "category": "Women",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 75,
+    "description": "Soft and breathable Tapered Pant.",
+    "image": "/Images/tapered pants.webp",
+    "tags": ["summer"]
+  }
+]
