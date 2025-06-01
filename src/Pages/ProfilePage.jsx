@@ -1,14 +1,18 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
 
 export default function ProfilePage() {
+  const { user, isAuthenticated } = useAuth()
   const navigate = useNavigate()
 
-  // Simulated user data (replace with real auth/user data)
-  const [user, setUser] = useState({
-    name: 'Jane Doe',
-    email: 'jane.doe@example.com',
-  })
+  useEffect(() => {
+    if (!isAuthenticated) {
+      navigate('/login')
+    }
+  }, [isAuthenticated])
+
+  if (!user) return null // Optional loading fallback
 
   // Simulated order history data (replace with real API call)
   const [orders, setOrders] = useState([
@@ -27,11 +31,12 @@ export default function ProfilePage() {
   ])
 
   // Logout function (clear auth tokens/session)
+  const { logout } = useAuth()
+
   const handleLogout = () => {
-    // clear tokens/session here
-    alert('Logged out!')
-    navigate('/login')
+    logout()
   }
+
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-24 dark:text-dark-text">
@@ -41,7 +46,7 @@ export default function ProfilePage() {
       <section className="mb-12">
         <h2 className="text-xl font-semibold mb-4">Profile Information</h2>
         <div className="space-y-2">
-          <p><strong>Name:</strong> {user.name}</p>
+          <p><strong>Name:</strong> {user.username}</p>
           <p><strong>Email:</strong> {user.email}</p>
         </div>
       </section>

@@ -27,7 +27,7 @@ export default function SignupPage() {
     setLoading(false)
 
     if (res.success) {
-      navigate('/')
+      navigate('/profile')
     } else {
       setError(res.message)
     }

@@ -1,8 +1,5 @@
 import React from 'react'
 import CheckoutPage from './pages/CheckoutPage'
-import LoginPage from './pages/LoginPage'
-import SignupPage from './pages/SignupPage'
-import ProfilePage from './pages/ProfilePage'
 import Footer from './components/Footer'
 import HomePage from './Pages/HomePage'
 import ProductListPage from './Pages/ProductListPage'
@@ -15,6 +12,9 @@ import WinterCollection from './Pages/WinterCollection'
 import SpringCollection from './Pages/SpringCollection'
 import AutumnCollection from './Pages/AutumnCollection'
 import Navbar from './components/Navbar'
+import LoginPage from './Pages/LoginPage'
+import SignupPage from './Pages/SignupPage'
+import ProfilePage from './Pages/ProfilePage'
 
 
 function App() {

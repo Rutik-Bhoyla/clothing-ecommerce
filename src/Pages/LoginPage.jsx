@@ -18,10 +18,11 @@ export default function LoginPage() {
     const res = await login({ email, password })
     setLoading(false)
     if (res.success) {
-      navigate('/')
+      navigate('/profile')
     } else {
       setError(res.message)
     }
+    setTimeout(() => setError(''), 3000)
   }
 
   return (
