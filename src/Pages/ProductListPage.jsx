@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
-import mockProducts from '../data/products.json'
+import mockProducts from '../../public/data/products.json'
 import ProductCard from '../components/ProductCard'
 
 export default function ProductListPage() {
