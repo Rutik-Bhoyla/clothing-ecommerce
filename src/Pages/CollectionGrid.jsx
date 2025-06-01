@@ -5,25 +5,25 @@ const collections = [
   {
     id: 1,
     name: "Summer Collection",
-    image: "/Images/2.webp",
+    image: "https://images.unsplash.com/photo-1562571151-864223d7d62a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     route: "/products/summerCollection",
   },
   {
     id: 2,
     name: "Winter Collection",
-    image: "/Images/3.webp",
+    image: "https://plus.unsplash.com/premium_photo-1661767406131-e60522d8674a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     route: "/products/winterCollection",
   },
   {
     id: 3,
     name: "Spring Collection",
-    image: "/Images/4.webp",
+    image: "https://images.unsplash.com/photo-1619032468883-89a84f565cba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     route: "/products/springCollection",
   },
   {
     id: 4,
     name: "Autumn Collection",
-    image: "/Images/1.webp",
+    image: "https://images.unsplash.com/photo-1719552979950-f35958f97ebe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     route: "/products/autumnCollection",
   },
 ];
@@ -50,7 +50,7 @@ export default function CollectionGrid() {
           <Link
             to={collection.route}
             key={collection.id}
-            className={`relative overflow-hidden rounded-2xl shadow-xl duration-700 ease-out
+            className={`relative overflow-hidden rounded-2xl shadow-xl transform transition-all duration-700 ease-out
               ${visibleItems.includes(idx) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
               hover:scale-105 hover:shadow-2xl`}
             style={{ transitionDelay: `${idx * 150}ms` }}

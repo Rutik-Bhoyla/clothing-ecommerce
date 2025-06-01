@@ -6,7 +6,7 @@
     "sizes": ["S", "M", "L"],
     "price": 59,
     "description": "A timeless white shirt crafted with premium cotton for comfort and style.",
-    "image": "/Images/WhiteShirt.webp",
+    "image": "https://plus.unsplash.com/premium_photo-1678218594563-9fe0d16c6838?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": ["summer", "spring"]
   },
   {
@@ -16,7 +16,7 @@
     "sizes": ["M", "L"],
     "price": 89,
     "description": "Relaxed fit trousers made for everyday comfort and effortless style.",
-    "image": "/Images/FitTrouser.webp",
+    "image": "https://plus.unsplash.com/premium_photo-1689977493146-ed929d07d97e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": ["autumn", "winter"]
   },
   {
@@ -26,7 +26,7 @@
     "sizes": ["L", "XL"],
     "price": 120,
     "description": "A lightweight jacket perfect for layering, combining function and fashion.",
-    "image": "/Images/LightJacket.webp",
+    "image": "https://images.unsplash.com/photo-1741675121314-e46ce22a17d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxpZ2h0d2VpZ2h0JTIwamFja2V0JTIwbWluaW1hbHxlbnwwfHwwfHx8MA%3D%3D",
     "tags": ["autumn", "spring"]
   },
   {
@@ -36,7 +36,7 @@
     "sizes": ["S", "M", "L", "XL"],
     "price": 35,
     "description": "Soft and breathable casual T-shirt for everyday wear.",
-    "image": "/Images/casualTshirt.webp",
+    "image": "https://images.unsplash.com/photo-1660983414551-b3758336be15?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": ["summer"]
   },
   {
@@ -46,7 +46,7 @@
     "sizes": ["S", "M", "L", "XL"],
     "price": 85,
     "description": "Soft and breathable casual Coat for everyday wear.",
-    "image": "/Images/minimal coat.webp",
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": ["winter"]
   },
   {
@@ -56,7 +56,7 @@
     "sizes": ["S", "M", "L", "XL"],
     "price": 80,
     "description": "Linen shirt for everyday wear.",
-    "image": "/Images/Linen shirt.webp",
+    "image": "https://images.unsplash.com/photo-1713881842156-3d9ef36418cc?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": ["summer"]
   },
   {
@@ -66,7 +66,7 @@
     "sizes": ["S", "M", "L", "XL"],
     "price": 75,
     "description": "Soft and breathable Tapered Pant.",
-    "image": "/Images/tapered pants.webp",
+    "image": "https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": ["summer"]
   }
 ]

@@ -23,10 +23,9 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* Optional Image Right (can comment out if not needed) */}
         <div className="hidden md:block">
           <img
-            src="/Images/1.webp" // Replace with your actual image path
+            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Hero"
             className="w-full h-auto object-cover rounded-lg shadow-lg"
           />

@@ -3,9 +3,9 @@ import { useCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
 
 const products = [
-  { id: 5, name: 'Minimal Coat', image: '/Images/minimal coat.webp', price: 120 },
-  { id: 6, name: 'Linen Shirt', image: '/Images/Linen shirt.webp', price: 65 },
-  { id: 7, name: 'Tapered Pants', image: '/Images/tapered pants.webp', price: 80 },
+  { id: 5, name: 'Minimal Coat', image: 'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', price: 120 },
+  { id: 6, name: 'Linen Shirt', image: 'https://images.unsplash.com/photo-1713881842156-3d9ef36418cc?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', price: 65 },
+  { id: 7, name: 'Tapered Pants', image: 'https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', price: 80 },
 ];
 
 export default function FeaturedProducts() {
