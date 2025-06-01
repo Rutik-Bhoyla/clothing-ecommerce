@@ -15,8 +15,8 @@ export default function CartPage() {
   }
 
   return (
-    <div className="container mx-auto px-6 py-16 max-w-5xl">
-      <h1 className="text-3xl font-serif font-bold mb-10 text-gray-900">Shopping Cart</h1>
+    <div className="container mx-auto px-6 py-24 max-w-5xl">
+      <h1 className="text-3xl font-serif font-bold mb-10 text-gray-900 dark:text-dark-text">Shopping Cart</h1>
 
       <div className="flex flex-col space-y-6">
         {cartItems.map(item => (
@@ -33,9 +33,9 @@ export default function CartPage() {
 
             {/* Product Info */}
             <div className="flex-1">
-              <h2 className="font-semibold text-lg text-gray-900">{item.name}</h2>
-              <p className="text-gray-700">Size: {item.size}</p>
-              <p className="text-gray-900 font-semibold">${item.price.toFixed(2)}</p>
+              <h2 className="font-semibold text-lg text-gray-900 dark:text-dark-text">{item.name}</h2>
+              <p className="text-gray-700 dark:text-dark-text">Size: {item.size}</p>
+              <p className="text-gray-900 font-semibold dark:text-dark-text">${item.price.toFixed(2)}</p>
             </div>
 
             {/* Quantity */}
@@ -66,10 +66,10 @@ export default function CartPage() {
 
       {/* Total */}
       <div className="mt-10 flex justify-end items-center gap-6">
-        <p className="text-xl font-semibold">Total: ${totalPrice.toFixed(2)}</p>
+        <p className="text-xl font-semibold dark:text-dark-text">Total: ${totalPrice.toFixed(2)}</p>
         <button
           onClick={() => alert('Proceeding to checkout (mock)')}
-          className="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-800 transition"
+          className="bg-gray-900 text-white dark:bg-light-bg dark:text-black px-6 py-3 rounded hover:bg-gray-800 dark:hover:bg-accent-light transition"
         >
           Checkout
         </button>

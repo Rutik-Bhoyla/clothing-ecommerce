@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FaShoppingBag } from 'react-icons/fa'
+import { FaShoppingBag, FaMoon, FaSun } from 'react-icons/fa'
 import { useEffect, useState, useRef } from 'react'
 
 export default function Navbar() {
@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [showNav, setShowNav] = useState(true)
   const lastScrollY = useRef(0)
-  const [loaded, setLoaded] = useState(false)  // for load animation
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
     if (dark) {
@@ -27,10 +27,8 @@ export default function Navbar() {
       if (currentScrollY <= 0) {
         setShowNav(true)
       } else if (currentScrollY > lastScrollY.current) {
-        // Scrolling down - hide navbar
         setShowNav(false)
       } else if (currentScrollY < lastScrollY.current) {
-        // Scrolling up - show navbar
         setShowNav(true)
       }
       lastScrollY.current = currentScrollY
@@ -68,20 +66,26 @@ export default function Navbar() {
           <Link to="/products/kids" className={navLinkStyle}>KIDS</Link>
         </div>
 
-        {/* Search + Icons */}
+        {/* Right Side Icons */}
         <div className="flex items-center gap-4 md:gap-6 text-sm font-light">
-          {/* Search bar */}
+
+          {/* Search */}
           <input
             type="text"
             placeholder="Search"
             className="hidden md:block border border-light-border dark:border-dark-border rounded-full px-4 py-1 text-sm bg-transparent focus:outline-none placeholder:opacity-70"
           />
 
-          <button onClick={() => setDark(!dark)} className="focus:outline-none rounded px-2 py-1 border border-light-border dark:border-dark-border hover:bg-black dark:hover:text-black hover:text-white  dark:hover:bg-accent-dark transition">
-            {dark ? 'Light Mode' : 'Dark Mode'}
+          {/* Dark Mode Toggle (Minimal Icon Button) */}
+          <button
+            onClick={() => setDark(!dark)}
+            className="w-9 h-9 flex items-center justify-center rounded-full border border-light-border dark:border-dark-border hover:bg-black hover:text-white dark:hover:bg-accent-dark dark:hover:text-black transition"
+            aria-label="Toggle Dark Mode"
+          >
+            {dark ? <FaSun className="text-base" /> : <FaMoon className="text-base" />}
           </button>
 
-          {/* Cart Icon */}
+          {/* Cart */}
           <Link to="/cart" className="hover:opacity-70 transition">
             <FaShoppingBag className="text-xl" />
           </Link>

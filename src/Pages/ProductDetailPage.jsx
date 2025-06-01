@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { useState, useEffect } from 'react'
-import products from '../../public/data/products.json' // ✅ Use direct import instead of fetch
+import products from '../../public/data/products.json' 
 
 export default function ProductDetailPage() {
   const { id } = useParams()
